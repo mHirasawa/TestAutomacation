@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [RegressionSuite]">
+  <test name="RegressionTestCases(failed)">
+    <classes>
+      <class name="com.regression.HelloWorldTest">
+        <methods>
+          <include name="testHelloWorld"/>
+        </methods>
+      </class> <!-- com.regression.HelloWorldTest -->
+    </classes>
+  </test> <!-- RegressionTestCases(failed) -->
+</suite> <!-- Failed suite [RegressionSuite] -->

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+  <reporter-output>
+    <line>
+      <![CDATA[<b>テスト</b>]]>
+    </line>
+  </reporter-output>
+  <suite name="PrototypeTestSuite" duration-ms="10567" started-at="2018-07-04T12:27:07Z" finished-at="2018-07-04T12:27:18Z">
+    <groups>
+    </groups>
+    <test name="PrototypeTestCases" duration-ms="10567" started-at="2018-07-04T12:27:07Z" finished-at="2018-07-04T12:27:18Z">
+      <class name="prototype.regression.PrototypeTest">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:prototype.regression.PrototypeTest@6a2bcfcb]" name="setUp" is-config="true" duration-ms="3314" started-at="2018-07-04T12:27:07Z" finished-at="2018-07-04T12:27:10Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="helloWorldTest()[pri:0, instance:prototype.regression.PrototypeTest@6a2bcfcb]" name="helloWorldTest" duration-ms="5208" started-at="2018-07-04T12:27:10Z" finished-at="2018-07-04T12:27:16Z">
+          <reporter-output>
+            <line>
+              <![CDATA[<b>テスト</b>]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- helloWorldTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:prototype.regression.PrototypeTest@6a2bcfcb]" name="tearDown" is-config="true" duration-ms="2040" started-at="2018-07-04T12:27:16Z" finished-at="2018-07-04T12:27:18Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- prototype.regression.PrototypeTest -->
+    </test> <!-- PrototypeTestCases -->
+  </suite> <!-- PrototypeTestSuite -->
+</testng-results>

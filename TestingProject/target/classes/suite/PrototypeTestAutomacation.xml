@@ -1,0 +1,9 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+ 
+<suite name="PrototypeTestSuite" verbose="1" >
+  <test name="PrototypeTestCases"   >
+    <packages>
+      <package name="prototype.regression" />
+   </packages>
+ </test>
+</suite>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [PrototypeTestSuite]">
+  <test thread-count="5" name="PrototypeTestCases(failed)">
+    <classes>
+      <class name="prototype.regression.PrototypeTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+          <include name="testHelloWorld"/>
+        </methods>
+      </class> <!-- prototype.regression.PrototypeTest -->
+    </classes>
+  </test> <!-- PrototypeTestCases(failed) -->
+</suite> <!-- Failed suite [PrototypeTestSuite] -->
