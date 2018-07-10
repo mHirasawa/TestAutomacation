@@ -47,11 +47,6 @@
 			<version>1.4.0</version>
 		</dependency>
 
-		<dependency>
-			<groupId>org.sahagin</groupId>
-			<artifactId>sahagin</artifactId>
-			<version>${sahagin.version}</version>
-		</dependency>
 	</dependencies>
 	<build>
 		<plugins>

@@ -5,23 +5,23 @@
       <![CDATA[<b>テスト</b>]]>
     </line>
   </reporter-output>
-  <suite name="PrototypeTestSuite" duration-ms="8949" started-at="2018-07-02T15:51:19Z" finished-at="2018-07-02T15:51:28Z">
+  <suite name="PrototypeTestSuite" duration-ms="11524" started-at="2018-07-10T12:13:47Z" finished-at="2018-07-10T12:13:58Z">
     <groups>
     </groups>
-    <test name="PrototypeTestCases" duration-ms="8949" started-at="2018-07-02T15:51:19Z" finished-at="2018-07-02T15:51:28Z">
+    <test name="PrototypeTestCases" duration-ms="11524" started-at="2018-07-10T12:13:47Z" finished-at="2018-07-10T12:13:58Z">
       <class name="prototype.regression.PrototypeTest">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:prototype.regression.PrototypeTest@4bec1f0c]" name="setUp" is-config="true" duration-ms="2948" started-at="2018-07-02T15:51:19Z" finished-at="2018-07-02T15:51:22Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:prototype.regression.PrototypeTest@1a968a59]" name="setUp" is-config="true" duration-ms="3019" started-at="2018-07-10T12:13:47Z" finished-at="2018-07-10T12:13:50Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="helloWorldTest()[pri:0, instance:prototype.regression.PrototypeTest@4bec1f0c]" name="helloWorldTest" duration-ms="4282" started-at="2018-07-02T15:51:22Z" finished-at="2018-07-02T15:51:26Z">
+        <test-method status="PASS" signature="helloWorldTest()[pri:0, instance:prototype.regression.PrototypeTest@1a968a59]" name="helloWorldTest" duration-ms="6323" started-at="2018-07-10T12:13:50Z" finished-at="2018-07-10T12:13:56Z">
           <reporter-output>
             <line>
               <![CDATA[<b>テスト</b>]]>
             </line>
           </reporter-output>
         </test-method> <!-- helloWorldTest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:prototype.regression.PrototypeTest@4bec1f0c]" name="tearDown" is-config="true" duration-ms="1690" started-at="2018-07-02T15:51:26Z" finished-at="2018-07-02T15:51:28Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:prototype.regression.PrototypeTest@1a968a59]" name="tearDown" is-config="true" duration-ms="2149" started-at="2018-07-10T12:13:56Z" finished-at="2018-07-10T12:13:58Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

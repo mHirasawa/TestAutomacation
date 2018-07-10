@@ -19,7 +19,7 @@ import org.testng.Reporter;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
-import org.testng.reporters.*;
+
 import pages.sample.test.ReserveConfilm;
 import pages.sample.test.ReserveForm;
 
@@ -71,24 +71,6 @@ public class PrototypeTest {
 		}
 	}
 
-//	@Test
-//	public void testHelloWorld2() throws IOException {
-//		ReserveForm rF = new ReserveForm(driver);
-//		ReserveConfilm rC = new ReserveConfilm(driver);
-//		rF.openPage();
-//		getScreenshot();
-//		rF.setReserveDay("16");
-//		rF.setGuestName("せれにうむ男");
-//		rF.goToNext();
-//		getScreenshot();
-//		rC.commit();
-//		getScreenshot();
-//		try {
-//			assertEquals(driver.getTitle(), "予約完了");
-//		} catch (Error e) {
-//			verificationErrors.append(e.toString());
-//		}
-//	}
 	/**
 	 * 事後処理
 	 * 
