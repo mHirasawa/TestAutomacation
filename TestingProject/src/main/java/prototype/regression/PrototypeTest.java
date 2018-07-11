@@ -20,6 +20,8 @@ import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
+import com.google.common.base.Verify;
+
 import pages.sample.test.ReserveConfilm;
 import pages.sample.test.ReserveForm;
 
@@ -63,12 +65,15 @@ public class PrototypeTest {
 		getScreenshot();
 		rC.commit();
 		getScreenshot();
-		Reporter.log("<b>テスト</b>");
-		try {
-			assertEquals(driver.getTitle(), "予約完了");
-		} catch (Error e) {
-			verificationErrors.append(e.toString());
+		String verificationErrorString = verificationErrors.toString();
+		if (!"".equals(verificationErrorString)) {
+			fail(verificationErrorString);
 		}
+//		try {
+//			assertEquals(driver.getTitle(), "予約完");
+//		} catch (Error e) {
+//			verificationErrors.append(e.toString());
+//		}
 	}
 
 	/**
@@ -77,30 +82,29 @@ public class PrototypeTest {
 	 * */
 	@AfterClass(alwaysRun = true)
 	public void tearDown() throws Exception {
-		compare();
 		driver.quit();
-		String verificationErrorString = verificationErrors.toString();
-		if (!"".equals(verificationErrorString)) {
-			fail(verificationErrorString);
-		}
 	}
 
 	public void getScreenshot() throws IOException {
 		File scrFile = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
 		FileUtils.copyFile(scrFile,
 				new File("C:\\Jenkins\\jobs\\maven\\workspace\\テスト用スクショ\\work\\" + countSchreenshot + ".png"));
+		compare();
 		countSchreenshot++;
 	}
 
 	public void compare() {
 		// Compare the images
-		for (int i = 0; i < countSchreenshot; i++) {
 			boolean compareSuccess = compareImages(
-					"C:/Jenkins/jobs/maven/workspace/テスト用スクショ/correct/" + i + ".png",
-					"C:/Jenkins/jobs/maven/workspace/テスト用スクショ/work/" + i + ".png",
-					"C:/Jenkins/jobs/maven/workspace/テスト用スクショ/result/" + i + ".png");
-			System.out.println(i + "：" + compareSuccess);
-		}
+					"C:/Jenkins/jobs/maven/workspace/テスト用スクショ/correct/" + countSchreenshot + ".png",
+					"C:/Jenkins/jobs/maven/workspace/テスト用スクショ/work/" + countSchreenshot + ".png",
+					"C:/Jenkins/jobs/maven/workspace/テスト用スクショ/result/" + countSchreenshot + ".png");
+			try {
+				assertEquals(compareSuccess, true);
+			} catch (Error e) {
+				Reporter.log("<br />スクショ"+countSchreenshot+":"+e.toString());
+				verificationErrors.append("\nスクショ"+countSchreenshot+":"+e.toString());
+			}
 	}
 
 	boolean compareImages(String exp, String cur, String diff) {
